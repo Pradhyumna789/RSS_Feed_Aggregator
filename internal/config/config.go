@@ -29,7 +29,7 @@ func (config *Config) SetUser(current_user_name string) {
 		log.Fatal(err)
 	}
 
-	filePath := filepath.Join(homeDir, "gatorconfig.json") 
+	filePath := filepath.Join(homeDir, "gatorconfig.json")
 
 	jsonData, err := os.ReadFile(filePath)
 	if err != nil {
