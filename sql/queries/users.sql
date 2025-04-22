@@ -15,7 +15,10 @@ SELECT * FROM users;
 TRUNCATE TABLE users;
 
 -- name: GetUser :one
-SELECT user_name FROM users WHERE user_name = $1;
+SELECT id, created_at, updated_at, user_name FROM users WHERE user_name = $1;
 
 -- name: GetUserByName :one
 SELECT id FROM users WHERE user_name = $1;
+
+-- name: GetUserNameById :one
+SELECT user_name FROM users WHERE id = $1;
