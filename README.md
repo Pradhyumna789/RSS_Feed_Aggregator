@@ -44,11 +44,6 @@ go run . agg 2s
 ```
 👉 You can customize how often feeds are fetched (intervals, number of feeds, etc.) in the scrapeFeeds() function inside rss.go.
 
-🛠️ Future Improvements
-- ✅ Support for Atom and JSON feeds
-- ✅ Persistent storage (DB)
-- ✅ Improved CLI UX (colors, better formatting)
-
 📖 Example Usage
 ```bash
 # Register a user
